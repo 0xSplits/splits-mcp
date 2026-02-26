@@ -10,8 +10,11 @@ MCP server for Splits that lets AI assistants (Claude Desktop, Claude Code, etc.
 ### Getting an API Key
 
 1. Log in to [app.splits.org](https://app.splits.org) using the same email you use on [teams.splits.org](https://teams.splits.org)
-2. Go to [Settings → API Keys](https://app.splits.org/settings/#api-keys)
-3. Create a new API key and copy it for use in the configuration below
+2. Select the team/org you want to connect using the org selector in the sidebar
+3. Go to [Settings → API Keys](https://app.splits.org/settings/#api-keys)
+4. Create a new API key and copy it for use in the configuration below
+
+> **Note:** API keys are scoped to a specific team/org. Make sure you have the correct team selected before creating the key.
 
 ## Installation
 
