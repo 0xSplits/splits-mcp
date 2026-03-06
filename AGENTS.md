@@ -50,7 +50,10 @@ async getNewThing(params: { ... }) {
 
 | Tool | Description |
 |------|-------------|
+| `get_org_info` | Org name, logo, and creation date |
+| `get_org_accounts` | Smart accounts (id, name, address, role) with optional archived filtering |
 | `get_org_balances` | Token balances across all chains, grouped by smart account |
+| `search_contacts` | Search org contacts by name or address |
 | `get_transactions` | Combined transactions + asset transfers with pagination/filtering |
 
 ## Dev Commands
