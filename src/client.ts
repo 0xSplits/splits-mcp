@@ -56,4 +56,18 @@ export class SplitsApiClient {
 
     return this.request('/api/external/org/transactions', queryParams)
   }
+
+  async getOrgInfo() {
+    return this.request('/api/external/org/info')
+  }
+
+  async getAccounts(params?: { showArchived?: boolean }) {
+    const queryParams: Record<string, string> = {}
+    if (params?.showArchived) queryParams.showArchived = 'true'
+    return this.request('/api/external/org/accounts', queryParams)
+  }
+
+  async searchContacts(query: string) {
+    return this.request('/api/external/org/contacts', { query })
+  }
 }
